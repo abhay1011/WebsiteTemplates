@@ -25,7 +25,7 @@ ul li{
     margin-left: auto;
 }
 .sticky{
-    position: fixed;
+    position:fixed;
     width: 100%;
     z-index: 999;/*It will be on top*/
     
