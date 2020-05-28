@@ -3,11 +3,12 @@ body{
     font-family: 'Zilla Slab', serif;
 }
 /*Navbar css*/
+
 nav ul{
     margin: 0px;   
     display: flex;
     list-style: none;
-    background-color: rgbar;
+    background-color: black;
 }
 li>a{
     text-decoration: none;
@@ -21,6 +22,10 @@ ul li{
     font-size: 20px;
     padding: 10px;
 }
+.myname{
+    font-size: 3em;
+    color: black;
+}
 .right{
     margin-left: auto;
 }
@@ -30,38 +35,43 @@ ul li{
     z-index: 999;/*It will be on top*/
     
 }
-/*Cover CSS*/
+/*Navigation Bar CSS ends*/
+.container{
+    display: grid;
+    grid-template-columns:1fr 2fr
+}
+/*Cover about me section CSS*/
 .cover{
-    height: 60vh;
+    height:100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.cover > img{
-    margin-top:50px;
-    width: 30rem;
-    height: 20rem;
-}
-/*ADding grid*/
-.grid-wrapper{
-    background-color: azure;
-    display: grid;
-    grid-gap:10px;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-
-}
-.box > img{
-     width: 100%;
+    background-color: aquamarine;
 }
 .box{
+    width:80%;
     background-color: #444;  
     padding:5%;
-    margin: 20px;
     transition: all 1s;
 }
 .box:hover{
-    transform: scale(1.05);
-    
+    transform: scale(1.05);   
+}
+.box > img{
+     width:100%
+}
+
+.aboutme{
+    clear:float;
+}
+/* The content css*/
+.content{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
 }
 /*Footer CSs*/
 footer{
@@ -69,26 +79,22 @@ footer{
     text-align: center;
     font-style: italic;
     height:5vh;
-    background-color: azure;
+    color: white;
+    background-color:black;
 }
 /*Smartphone Responsive CSS*/
-@media only screen and (max-width : 600px){
-    ul>li{
-        padding:10px;
-        
+@media only screen and (max-width : 720px){
+    ul li{
+        padding:2px;
     }
-    .right{
-        margin:0px;
+    .myname{
+        font-size:25px;
     }
-    .grid-wrapper{
-           grid-template-columns:1fr 1fr;
-           grid-gap:5px;
+    .container{
+        display: flex;
+        flex-direction: column;
     }
-    .box{
-        margin:5px;
-    }
-    .cover > img{
-    width: 20rem;
-}
+     .cover{
+            background-color: aqua;}
     
 }
