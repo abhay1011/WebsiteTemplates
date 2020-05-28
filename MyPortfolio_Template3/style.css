@@ -42,7 +42,6 @@ ul li{
 }
 /*Cover about me section CSS*/
 .cover{
-    height:100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,27 +50,44 @@ ul li{
 }
 .box{
     width:80%;
-    background-color: #444;  
+    background-color: #444; 
     padding:5%;
     transition: all 1s;
 }
 .box:hover{
     transform: scale(1.05);   
 }
-.box > img{
-     width:100%
-}
-
-.aboutme{
-    clear:float;
-}
 /* The content css*/
 .content{
+    margin-top:80px;
     height:100vh;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
+}
+.project{
+    height:100vh;
+    background-color:beige;
+    width: 100%;
+}
+.skills{
+    height:100vh;
+    background-color: azure;
+    width: 100%;
+    
+}
+.qualification{
+     height:100vh;
+    background-color:cornsilk;
+    width: 100%;
+    
+}
+.contact{
+    height:20vh;
+    background-color:bisque;
+    width: 100%;
+    
 }
 /*Footer CSs*/
 footer{
@@ -96,5 +112,10 @@ footer{
     }
      .cover{
             background-color: aqua;}
+    .box{
+        margin-top:60px;}
+    .content{
+        margin-top:0px;
+    }
     
 }
