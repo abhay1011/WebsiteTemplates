@@ -8,7 +8,7 @@ nav ul{
     margin: 0px;   
     display: flex;
     list-style: none;
-    background-color: black;
+    background:black;
 }
 li>a{
     text-decoration: none;
@@ -46,7 +46,7 @@ ul li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aquamarine;
+    background:linear-gradient(to bottom,grey,white);
 }
 .box{
     width:80%;
@@ -70,6 +70,7 @@ ul li{
     height:100vh;
     background-color:beige;
     width: 100%;
+    background:linear-gradient(to bottom,orange,yellow);
 }
 .skills{
     height:100vh;
