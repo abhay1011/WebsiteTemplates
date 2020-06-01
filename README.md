@@ -11,6 +11,7 @@
      	<ul>
      		<li><a href="CSS_GRID_Template1/index.html">Single Page grid Template</a></li>
      		<li><a href="FlexBoxImageGallery_Template2/FlexBox.html">
+        <li><a href="
      		Image Gallery Template</a></li>
      	</ul>
      </section>
