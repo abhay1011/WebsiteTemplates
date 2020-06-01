@@ -59,7 +59,7 @@ ul li{
 }
 /* The content css*/
 .content{
-    margin-top:80px;
+    margin-top:75px;
     height:100vh;
     display:flex;
     flex-direction: column;
@@ -68,9 +68,11 @@ ul li{
 }
 .project{
     height:100vh;
-    background-color:beige;
     width: 100%;
-    background:linear-gradient(to bottom,orange,yellow);
+    background:linear-gradient(to bottom,cyan,white);
+}
+.projectlist >li>a{
+    color: black;
 }
 .skills{
     height:100vh;
