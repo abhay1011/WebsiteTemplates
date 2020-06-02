@@ -1,9 +1,15 @@
+
 body{
     margin: 0px;
     font-family: 'Zilla Slab', serif;
 }
 /*Navbar css*/
-
+.navshade{
+    background-color: black;
+    display: flex;
+    height:10vh;
+    
+}
 nav ul{
     margin: 0px;   
     display: flex;
@@ -17,14 +23,21 @@ li>a{
 li>a:hover{
     color: aqua;
 }
+nav ul{
+    margin-left: auto;
+    padding:0px; 
+}
 ul li{
+
     font-family: 'Zilla Slab', serif;
     font-size: 20px;
     padding: 10px;
 }
 .myname{
+    margin:5px;
     font-size: 3em;
-    color: black;
+    color:white;
+
 }
 .right{
     margin-left: auto;
@@ -59,7 +72,7 @@ ul li{
 }
 /* The content css*/
 .content{
-    margin-top:75px;
+    margin-top:65px;
     height:100vh;
     display:flex;
     flex-direction: column;
@@ -69,10 +82,7 @@ ul li{
 .project{
     height:100vh;
     width: 100%;
-    background:linear-gradient(to bottom,cyan,white);
-}
-.projectlist >li>a{
-    color: black;
+    background: lightcyan;
 }
 .skills{
     height:100vh;
@@ -103,11 +113,42 @@ footer{
 }
 /*Smartphone Responsive CSS*/
 @media only screen and (max-width : 720px){
+    body{
+        overflow-x: hidden;
+    }
+    .navelement{
+        position: absolute;
+        top:10vh;
+        right: 0px;
+        height: 90vh;
+        display:flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+/*        justify-content: space-around;*/
+        transform: translateX(100%);
+    }
+    .navelement-active{
+        transform: translateX(0%);
+    }
+    .navelement li{
+/*        opacity: 0;*/
+        margin-bottom:20%;
+    }
+    .ham{
+        margin-top:15px;
+        margin-right:5px;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .ham div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    }
     ul li{
         padding:2px;
-    }
-    .myname{
-        font-size:25px;
     }
     .container{
         display: flex;
