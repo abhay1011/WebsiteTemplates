@@ -1,0 +1,11 @@
+.aboutme{
+	position: absolute;
+	padding:5%;
+    background-color: rgba(12,213,123,0.3);
+    margin-top:100px;
+    margin-right: 5%;
+    margin-left:5%;
+    color:black;
+    font-size: 40px;
+    text-align: center;
+}

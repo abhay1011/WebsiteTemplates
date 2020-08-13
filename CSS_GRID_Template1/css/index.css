@@ -21,6 +21,7 @@ ul li{
     font-size: 20px;
     padding: 10px;
 }
+
 .right{
     margin-left: auto;
 }
@@ -32,10 +33,24 @@ ul li{
 }
 /*Cover CSS*/
 .cover{
+    position: relative;
+    text-align: center;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.centered{
+    position: absolute;
+}
+.centered >p{
+    padding:5%;
+    background-color: rgba(12,213,123,0.3);
+    margin-right: 5%;
+    margin-left:5%;
+    color:black;
+    font-size: 40px;
+    text-align: center;
 }
 .cover > img{
     margin-top:50px;
@@ -58,11 +73,14 @@ ul li{
     padding:5%;
     margin: 20px;
     transition: all 1s;
+    color: white;
+    text-align: center;
 }
 .box:hover{
     transform: scale(1.05);
     
 }
+
 /*Footer CSs*/
 footer{
     font-family: 'Zilla Slab', serif;
@@ -91,4 +109,7 @@ footer{
     width: 20rem;
 }
     
+}
+#myflutterapp{
+    font-size: 25px;
 }
