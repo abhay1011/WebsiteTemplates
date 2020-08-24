@@ -1,6 +1,6 @@
 # WebsiteTemplates
 ## Creating different website templates
-* Grid Website Template
+* Flutter Project Website
 * Image Gallery Template
 * Portfolio Template 
 
